@@ -3,8 +3,8 @@
 // Function to start a test at the specified level
 function startTest(level) {
     const levelPages = {
-        'beginner': 'levels/beginner.html',
-        'elementary': 'levels/elementary.html',
+        'pre-intermediate': 'levels/pre-intermediate.html',
+        'elementary': 'levels/intermediate.html',
         'advanced': 'levels/advanced.html'
     };
     
@@ -26,8 +26,8 @@ function startTest(level) {
 // Function to clear previous test data
 function clearPreviousTestData() {
     // Clear auto-saved answers
-    sessionStorage.removeItem('autoSavedAnswers_beginner');
-    sessionStorage.removeItem('autoSavedAnswers_elementary');
+    sessionStorage.removeItem('autoSavedAnswers_pre-intermediate');
+    sessionStorage.removeItem('autoSavedAnswers_intermediate');
     sessionStorage.removeItem('autoSavedAnswers_advanced');
     sessionStorage.removeItem('autoSavedAnswers');
     
@@ -90,8 +90,8 @@ function downloadResults() {
 
 // Add keyboard navigation
 document.addEventListener('keydown', function(event) {
-    if (event.key === '1') startTest('beginner');
-    if (event.key === '2') startTest('elementary');
+    if (event.key === '1') startTest('pre-intermediate');
+    if (event.key === '2') startTest('elementary'); // Now routes to intermediate
     if (event.key === '3') startTest('advanced');
 });
 

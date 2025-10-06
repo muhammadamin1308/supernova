@@ -3,13 +3,13 @@
 - Direct download of results as JSON files
 - No personal information collection requiredt System
 
-A comprehensive web-based English proficiency testing application with three difficulty levels: Beginner, Elementary, and Advanced.
+A comprehensive web-based English proficiency testing application with three difficulty levels: Pre-Intermediate, Elementary, and Advanced.
 
 ## Features
 
 ### 🎯 **Three Test Levels**
-- **Beginner**: Basic grammar and vocabulary (30 questions, 20 minutes)
-- **Elementary**: Pre-intermediate level (105 questions, 45 minutes)  
+- **Pre-Intermediate**: Grammar, vocabulary & pronunciation (100 questions, 45 minutes)
+- **Elementary**: Elementary level (105 questions, 45 minutes)  
 - **Advanced**: Advanced grammar and complex vocabulary (50 questions, 60 minutes)
 
 ### ⏱️ **Timer System**
@@ -43,11 +43,11 @@ Supernova/
 ├── scripts/
 │   ├── main.js             # Main navigation logic
 │   ├── test-common.js      # Common test functionality
-│   ├── beginner-test.js    # Beginner test logic
+│   ├── pre-intermediate-test.js    # Pre-Intermediate test logic
 │   ├── elementary-test.js  # Elementary test logic
 │   └── advanced-test.js    # Advanced test logic
 └── levels/
-    ├── beginner.html       # Beginner level test
+    ├── pre-intermediate.html       # Pre-Intermediate level test
     ├── elementary.html     # Elementary level test
     └── advanced.html       # Advanced level test
 ```
@@ -56,7 +56,7 @@ Supernova/
 
 ### For Students:
 1. Open `index.html` in a web browser
-2. Choose your test level (Beginner/Elementary/Advanced)
+2. Choose your test level (Pre-Intermediate/Elementary/Advanced)
 3. Complete the test within the time limit
 4. Submit your answers
 5. Download your results immediately
@@ -87,9 +87,10 @@ npx serve
 
 ## Test Content
 
-### Beginner Level (30 points)
-- **Grammar (15 questions)**: Basic tenses, articles, pronouns
-- **Vocabulary (15 questions)**: Common words, opposites, basic concepts
+### Pre-Intermediate Level (100 points)
+- **Grammar (40 questions)**: Complete sentences, one word completion, multiple choice
+- **Vocabulary (40 questions)**: Odd one out, sentence completion, opposites, prepositions
+- **Pronunciation (20 questions)**: Sound matching, stress syllables
 
 ### Elementary Level (105 points)  
 - **Grammar (40 questions)**: Present/past tenses, conditionals, passive voice
@@ -113,7 +114,7 @@ Results are saved as JSON with the following structure:
 ```json
 {
   "testResults": {
-    "level": "beginner|elementary|advanced",
+    "level": "pre-intermediate|elementary|advanced",
     "score": 25,
     "totalQuestions": 30,
     "answers": {...},

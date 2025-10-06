@@ -1,63 +1,64 @@
 /* Main Styles for English Proficiency Test */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Arial', 'Helvetica', sans-serif;
-    background: linear-gradient(135deg, #2563eb 0%, #1e40af 50%, #1d4ed8 100%);
-    min-height: 100vh;
-    color: #333;
+  font-family: "Arial", "Helvetica", sans-serif;
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 50%, #1d4ed8 100%);
+  min-height: 100vh;
+  color: #333;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  max-width: 1200px;
+  margin: 10px auto;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header Styles */
 header {
-    text-align: center;
-    margin-bottom: 40px;
-    padding: 40px 0;
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 40px 0;
 }
 
 .logo {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    border: 2px solid rgba(255,255,255,0.8);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.8);
 }
 
 header h1 {
-    color: white;
-    font-size: 3rem;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .subtitle {
-    color: rgba(255,255,255,0.9);
-    font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2rem;
 }
 
 /* Level Selection Styles */
 .level-selection {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .level-cards {
@@ -69,99 +70,142 @@ header h1 {
 }
 
 .level-card {
-    background: white;
-    border-radius: 15px;
-    padding: 30px;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 3px solid transparent;
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 3px solid transparent;
 }
 
 .level-card:hover {
-    transform: translateY(-10px) scale(1.2);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  transform: translateY(-10px) scale(1.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
-.level-card.beginner,
-.level-card.elementary,
+.level-card.pre-intermediate,
+.level-card.intermediate,
 .level-card.advanced {
-    border-color: #2563eb;
+  border-color: #2563eb;
 }
 
 .level-icon {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 20px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 .level-card h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    color: #333;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333;
 }
 
 .level-card p {
-    color: #666;
-    margin-bottom: 10px;
-    font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
 }
 
 .duration {
-    font-weight: bold;
-    color: #555 !important;
+  font-weight: bold;
+  color: #555 !important;
 }
 
 .level-btn {
-    background: linear-gradient(45deg, #2563eb, #1d4ed8);
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-size: 1.1rem;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin-top: 20px;
-    font-weight: bold;
+  background: linear-gradient(45deg, #2563eb, #1d4ed8);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  font-weight: bold;
 }
 
-
-
-.beginner-btn,
-.elementary-btn,
+.pre-intermediate-btn,
+.intermediate-btn,
 .advanced-btn {
-    background: linear-gradient(45deg, #2563eb, #1d4ed8);
+  background: linear-gradient(45deg, #2563eb, #1d4ed8);
+}
+
+/* Disabled Advanced Card Styles */
+.level-card.disabled {
+  position: relative;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.level-card.disabled::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(128, 128, 128, 0.7);
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.level-card.disabled::after {
+  content: 'Coming Soon';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  z-index: 2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.level-card.disabled:hover {
+  transform: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.level-card.disabled .level-btn {
+  background: #999;
+  cursor: not-allowed;
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 20px 0;
-    color: rgba(255,255,255,0.8);
-    font-size: 0.9rem;
+  text-align: center;
+  padding: 20px 0;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
 }
 
-.footer-anchor{
+.footer-anchor {
   color: white;
   text-decoration: none;
-  font-size: 1. 2rem;
+  font-size: 1 2rem;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-    
-    .level-cards {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    .level-card {
-        padding: 20px;
-    }
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .level-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .level-card {
+    padding: 20px;
+  }
 }
