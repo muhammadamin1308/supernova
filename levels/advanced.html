@@ -1,413 +1,706 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>Advanced Level Test</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="stylesheet" href="../styles/test.css">
-</head>
-<body>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/logo.png" />
+    <link rel="stylesheet" href="../styles/test.css" />
+  </head>
+  <body>
     <main>
-    <div class="test-header">
-        <img src="../assets/logo.png" alt="Supernova Logo" class="logo">
+      <div class="test-header">
+        <img src="../assets/logo.png" alt="Supernova Logo" class="logo" />
         <h1>Advanced Level Test</h1>
         <div class="test-info">
-            <span class="small">Advanced Grammar, Complex Vocabulary, Reading Comprehension • 50 questions • Total: 50 points</span>
-            <a href="../index.html" class="back-button">← Back to Home</a>
+          <span class="small"
+            >Advanced Grammar, Complex Vocabulary, Reading Comprehension • 50
+            questions • Total: 50 points</span
+          >
+          <a href="../index.html" class="back-button">← Back to Home</a>
         </div>
-    </div>
+      </div>
 
-    <div class="progress-container">
+      <div class="progress-container">
         <div class="progress-bar"></div>
-    </div>
+      </div>
 
-    <!-- Fixed Timer -->
-    <div class="timer" id="timer">⏱️ 60:00</div>
+      <!-- Fixed Timer -->
+      <div class="timer" id="timer">⏱️ 60:00</div>
 
-    <form id="examForm">
+      <form id="examForm">
         <!-- Advanced Grammar Section (25 questions) -->
         <div class="section">
-            <h2>Advanced Grammar — 25 points</h2>
+          <h2>Advanced Grammar — 25 points</h2>
 
-            <div class="question">
-                <span class="qnum">1.</span> Had I known about the meeting, I ______ attended.<br>
-                <label><input type="radio" name="q1" value="would have"> would have</label><br>
-                <label><input type="radio" name="q1" value="will have"> will have</label><br>
-                <label><input type="radio" name="q1" value="had"> had</label>
-                <div id="fb-q1" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">1.</span> Had I known about the meeting, I ______
+            attended.<br />
+            <label
+              ><input type="radio" name="q1" value="would have" /> would
+              have</label
+            ><br />
+            <label
+              ><input type="radio" name="q1" value="will have" /> will
+              have</label
+            ><br />
+            <label><input type="radio" name="q1" value="had" /> had</label>
+            <div id="fb-q1" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">2.</span> The proposal ______ by the committee yesterday.<br>
-                <label><input type="radio" name="q2" value="was rejected"> was rejected</label><br>
-                <label><input type="radio" name="q2" value="rejected"> rejected</label><br>
-                <label><input type="radio" name="q2" value="has rejected"> has rejected</label>
-                <div id="fb-q2" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">2.</span> The proposal ______ by the committee
+            yesterday.<br />
+            <label
+              ><input type="radio" name="q2" value="was rejected" /> was
+              rejected</label
+            ><br />
+            <label
+              ><input type="radio" name="q2" value="rejected" /> rejected</label
+            ><br />
+            <label
+              ><input type="radio" name="q2" value="has rejected" /> has
+              rejected</label
+            >
+            <div id="fb-q2" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">3.</span> ______ the weather been better, we would have gone hiking.<br>
-                <label><input type="radio" name="q3" value="Had"> Had</label><br>
-                <label><input type="radio" name="q3" value="If"> If</label><br>
-                <label><input type="radio" name="q3" value="When"> When</label>
-                <div id="fb-q3" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">3.</span> ______ the weather been better, we
+            would have gone hiking.<br />
+            <label><input type="radio" name="q3" value="Had" /> Had</label
+            ><br />
+            <label><input type="radio" name="q3" value="If" /> If</label><br />
+            <label><input type="radio" name="q3" value="When" /> When</label>
+            <div id="fb-q3" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">4.</span> She insisted ______ the truth about the incident.<br>
-                <label><input type="radio" name="q4" value="on knowing"> on knowing</label><br>
-                <label><input type="radio" name="q4" value="to know"> to know</label><br>
-                <label><input type="radio" name="q4" value="that she know"> that she know</label>
-                <div id="fb-q4" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">4.</span> She insisted ______ the truth about the
+            incident.<br />
+            <label
+              ><input type="radio" name="q4" value="on knowing" /> on
+              knowing</label
+            ><br />
+            <label
+              ><input type="radio" name="q4" value="to know" /> to know</label
+            ><br />
+            <label
+              ><input type="radio" name="q4" value="that she know" /> that she
+              know</label
+            >
+            <div id="fb-q4" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">5.</span> No sooner ______ the announcement than the crowd erupted in cheers.<br>
-                <label><input type="radio" name="q5" value="had he made"> had he made</label><br>
-                <label><input type="radio" name="q5" value="he had made"> he had made</label><br>
-                <label><input type="radio" name="q5" value="he made"> he made</label>
-                <div id="fb-q5" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">5.</span> No sooner ______ the announcement than
+            the crowd erupted in cheers.<br />
+            <label
+              ><input type="radio" name="q5" value="had he made" /> had he
+              made</label
+            ><br />
+            <label
+              ><input type="radio" name="q5" value="he had made" /> he had
+              made</label
+            ><br />
+            <label
+              ><input type="radio" name="q5" value="he made" /> he made</label
+            >
+            <div id="fb-q5" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">6.</span> The research ______ indicates significant climate changes.<br>
-                <label><input type="radio" name="q6" value="being conducted"> being conducted</label><br>
-                <label><input type="radio" name="q6" value="conducted"> conducted</label><br>
-                <label><input type="radio" name="q6" value="to conduct"> to conduct</label>
-                <div id="fb-q6" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">6.</span> The research ______ indicates
+            significant climate changes.<br />
+            <label
+              ><input type="radio" name="q6" value="being conducted" /> being
+              conducted</label
+            ><br />
+            <label
+              ><input type="radio" name="q6" value="conducted" />
+              conducted</label
+            ><br />
+            <label
+              ><input type="radio" name="q6" value="to conduct" /> to
+              conduct</label
+            >
+            <div id="fb-q6" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">7.</span> I wish I ______ more time to complete the project.<br>
-                <label><input type="radio" name="q7" value="had had"> had had</label><br>
-                <label><input type="radio" name="q7" value="have"> have</label><br>
-                <label><input type="radio" name="q7" value="will have"> will have</label>
-                <div id="fb-q7" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">7.</span> I wish I ______ more time to complete
+            the project.<br />
+            <label
+              ><input type="radio" name="q7" value="had had" /> had had</label
+            ><br />
+            <label><input type="radio" name="q7" value="have" /> have</label
+            ><br />
+            <label
+              ><input type="radio" name="q7" value="will have" /> will
+              have</label
+            >
+            <div id="fb-q7" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">8.</span> ______ as it may seem, the theory has some validity.<br>
-                <label><input type="radio" name="q8" value="Unlikely"> Unlikely</label><br>
-                <label><input type="radio" name="q8" value="Although"> Although</label><br>
-                <label><input type="radio" name="q8" value="Despite"> Despite</label>
-                <div id="fb-q8" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">8.</span> ______ as it may seem, the theory has
+            some validity.<br />
+            <label
+              ><input type="radio" name="q8" value="Unlikely" /> Unlikely</label
+            ><br />
+            <label
+              ><input type="radio" name="q8" value="Although" /> Although</label
+            ><br />
+            <label
+              ><input type="radio" name="q8" value="Despite" /> Despite</label
+            >
+            <div id="fb-q8" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">9.</span> The building ______ construction will house the new library.<br>
-                <label><input type="radio" name="q9" value="under"> under</label><br>
-                <label><input type="radio" name="q9" value="in"> in</label><br>
-                <label><input type="radio" name="q9" value="during"> during</label>
-                <div id="fb-q9" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">9.</span> The building ______ construction will
+            house the new library.<br />
+            <label><input type="radio" name="q9" value="under" /> under</label
+            ><br />
+            <label><input type="radio" name="q9" value="in" /> in</label><br />
+            <label
+              ><input type="radio" name="q9" value="during" /> during</label
+            >
+            <div id="fb-q9" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">10.</span> Were it not for his assistance, we ______ succeeded.<br>
-                <label><input type="radio" name="q10" value="wouldn't have"> wouldn't have</label><br>
-                <label><input type="radio" name="q10" value="won't have"> won't have</label><br>
-                <label><input type="radio" name="q10" value="hadn't"> hadn't</label>
-                <div id="fb-q10" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">10.</span> Were it not for his assistance, we
+            ______ succeeded.<br />
+            <label
+              ><input type="radio" name="q10" value="wouldn't have" /> wouldn't
+              have</label
+            ><br />
+            <label
+              ><input type="radio" name="q10" value="won't have" /> won't
+              have</label
+            ><br />
+            <label
+              ><input type="radio" name="q10" value="hadn't" /> hadn't</label
+            >
+            <div id="fb-q10" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">11.</span> Complete with the correct form: The committee recommends that the policy ______ immediately.<br>
-                <input type="text" name="q11" placeholder="be implemented/is implemented">
-                <div id="fb-q11" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">11.</span> Complete with the correct form: The
+            committee recommends that the policy ______ immediately.<br />
+            <input
+              type="text"
+              name="q11"
+              placeholder="be implemented/is implemented"
+            />
+            <div id="fb-q11" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">12.</span> Fill in: ______ all his efforts, he failed to achieve his goal.<br>
-                <input type="text" name="q12" placeholder="Despite/In spite of">
-                <div id="fb-q12" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">12.</span> Fill in: ______ all his efforts, he
+            failed to achieve his goal.<br />
+            <input type="text" name="q12" placeholder="Despite/In spite of" />
+            <div id="fb-q12" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">13.</span> Complete: It is imperative that students ______ their assignments on time.<br>
-                <input type="text" name="q13" placeholder="submit/hand in">
-                <div id="fb-q13" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">13.</span> Complete: It is imperative that
+            students ______ their assignments on time.<br />
+            <input type="text" name="q13" placeholder="submit/hand in" />
+            <div id="fb-q13" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">14.</span> Fill in: The phenomenon is ______ more complex than initially thought.<br>
-                <input type="text" name="q14" placeholder="considerably/significantly">
-                <div id="fb-q14" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">14.</span> Fill in: The phenomenon is ______ more
+            complex than initially thought.<br />
+            <input
+              type="text"
+              name="q14"
+              placeholder="considerably/significantly"
+            />
+            <div id="fb-q14" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">15.</span> Complete: ______ the circumstances, we had no choice but to cancel.<br>
-                <input type="text" name="q15" placeholder="Given/Considering">
-                <div id="fb-q15" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">15.</span> Complete: ______ the circumstances, we
+            had no choice but to cancel.<br />
+            <input type="text" name="q15" placeholder="Given/Considering" />
+            <div id="fb-q15" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">16.</span> The presentation ______ by the CEO was extremely informative.<br>
-                <label><input type="radio" name="q16" value="delivered"> delivered</label><br>
-                <label><input type="radio" name="q16" value="delivering"> delivering</label><br>
-                <label><input type="radio" name="q16" value="to deliver"> to deliver</label>
-                <div id="fb-q16" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">16.</span> The presentation ______ by the CEO was
+            extremely informative.<br />
+            <label
+              ><input type="radio" name="q16" value="delivered" />
+              delivered</label
+            ><br />
+            <label
+              ><input type="radio" name="q16" value="delivering" />
+              delivering</label
+            ><br />
+            <label
+              ><input type="radio" name="q16" value="to deliver" /> to
+              deliver</label
+            >
+            <div id="fb-q16" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">17.</span> Scarcely ______ the office when the phone rang.<br>
-                <label><input type="radio" name="q17" value="had I entered"> had I entered</label><br>
-                <label><input type="radio" name="q17" value="I had entered"> I had entered</label><br>
-                <label><input type="radio" name="q17" value="I entered"> I entered</label>
-                <div id="fb-q17" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">17.</span> Scarcely ______ the office when the
+            phone rang.<br />
+            <label
+              ><input type="radio" name="q17" value="had I entered" /> had I
+              entered</label
+            ><br />
+            <label
+              ><input type="radio" name="q17" value="I had entered" /> I had
+              entered</label
+            ><br />
+            <label
+              ><input type="radio" name="q17" value="I entered" /> I
+              entered</label
+            >
+            <div id="fb-q17" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">18.</span> The data suggests that the hypothesis ______ further investigation.<br>
-                <label><input type="radio" name="q18" value="warrants"> warrants</label><br>
-                <label><input type="radio" name="q18" value="warrant"> warrant</label><br>
-                <label><input type="radio" name="q18" value="warranted"> warranted</label>
-                <div id="fb-q18" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">18.</span> The data suggests that the hypothesis
+            ______ further investigation.<br />
+            <label
+              ><input type="radio" name="q18" value="warrants" />
+              warrants</label
+            ><br />
+            <label
+              ><input type="radio" name="q18" value="warrant" /> warrant</label
+            ><br />
+            <label
+              ><input type="radio" name="q18" value="warranted" />
+              warranted</label
+            >
+            <div id="fb-q18" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">19.</span> ______ his reputation for punctuality, he arrived late.<br>
-                <label><input type="radio" name="q19" value="Notwithstanding"> Notwithstanding</label><br>
-                <label><input type="radio" name="q19" value="Nevertheless"> Nevertheless</label><br>
-                <label><input type="radio" name="q19" value="However"> However</label>
-                <div id="fb-q19" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">19.</span> ______ his reputation for punctuality,
+            he arrived late.<br />
+            <label
+              ><input type="radio" name="q19" value="Notwithstanding" />
+              Notwithstanding</label
+            ><br />
+            <label
+              ><input type="radio" name="q19" value="Nevertheless" />
+              Nevertheless</label
+            ><br />
+            <label
+              ><input type="radio" name="q19" value="However" /> However</label
+            >
+            <div id="fb-q19" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">20.</span> The agreement is ______ to ratification by both parties.<br>
-                <label><input type="radio" name="q20" value="subject"> subject</label><br>
-                <label><input type="radio" name="q20" value="subjective"> subjective</label><br>
-                <label><input type="radio" name="q20" value="subjected"> subjected</label>
-                <div id="fb-q20" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">20.</span> The agreement is ______ to
+            ratification by both parties.<br />
+            <label
+              ><input type="radio" name="q20" value="subject" /> subject</label
+            ><br />
+            <label
+              ><input type="radio" name="q20" value="subjective" />
+              subjective</label
+            ><br />
+            <label
+              ><input type="radio" name="q20" value="subjected" />
+              subjected</label
+            >
+            <div id="fb-q20" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">21.</span> Fill in: The company's profits have ______ significantly this quarter.<br>
-                <input type="text" name="q21" placeholder="declined/decreased">
-                <div id="fb-q21" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">21.</span> Fill in: The company's profits have
+            ______ significantly this quarter.<br />
+            <input type="text" name="q21" placeholder="declined/decreased" />
+            <div id="fb-q21" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">22.</span> Complete: She has an ______ talent for languages.<br>
-                <input type="text" name="q22" placeholder="innate/inherent">
-                <div id="fb-q22" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">22.</span> Complete: She has an ______ talent for
+            languages.<br />
+            <input type="text" name="q22" placeholder="innate/inherent" />
+            <div id="fb-q22" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">23.</span> Fill in: The negotiations reached an ______ last week.<br>
-                <input type="text" name="q23" placeholder="impasse/deadlock">
-                <div id="fb-q23" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">23.</span> Fill in: The negotiations reached an
+            ______ last week.<br />
+            <input type="text" name="q23" placeholder="impasse/deadlock" />
+            <div id="fb-q23" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">24.</span> Complete: The evidence is ______ of his innocence.<br>
-                <input type="text" name="q24" placeholder="indicative/suggestive">
-                <div id="fb-q24" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">24.</span> Complete: The evidence is ______ of
+            his innocence.<br />
+            <input type="text" name="q24" placeholder="indicative/suggestive" />
+            <div id="fb-q24" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">25.</span> Fill in: The policy has been ______ controversial.<br>
-                <input type="text" name="q25" placeholder="highly/extremely">
-                <div id="fb-q25" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">25.</span> Fill in: The policy has been ______
+            controversial.<br />
+            <input type="text" name="q25" placeholder="highly/extremely" />
+            <div id="fb-q25" class="feedback"></div>
+          </div>
         </div>
 
         <!-- Advanced Vocabulary Section (25 questions) -->
         <div class="section">
-            <h2>Advanced Vocabulary — 25 points</h2>
+          <h2>Advanced Vocabulary — 25 points</h2>
 
-            <div class="question">
-                <span class="qnum">26.</span> Choose the word that best fits: The politician's ______ speech failed to convince the audience.<br>
-                <label><input type="radio" name="q26" value="eloquent"> eloquent</label><br>
-                <label><input type="radio" name="q26" value="verbose"> verbose</label><br>
-                <label><input type="radio" name="q26" value="concise"> concise</label>
-                <div id="fb-q26" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">26.</span> Choose the word that best fits: The
+            politician's ______ speech failed to convince the audience.<br />
+            <label
+              ><input type="radio" name="q26" value="eloquent" />
+              eloquent</label
+            ><br />
+            <label
+              ><input type="radio" name="q26" value="verbose" /> verbose</label
+            ><br />
+            <label
+              ><input type="radio" name="q26" value="concise" /> concise</label
+            >
+            <div id="fb-q26" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">27.</span> The company's ______ growth has surprised analysts.<br>
-                <label><input type="radio" name="q27" value="exponential"> exponential</label><br>
-                <label><input type="radio" name="q27" value="explicit"> explicit</label><br>
-                <label><input type="radio" name="q27" value="experimental"> experimental</label>
-                <div id="fb-q27" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">27.</span> The company's ______ growth has
+            surprised analysts.<br />
+            <label
+              ><input type="radio" name="q27" value="exponential" />
+              exponential</label
+            ><br />
+            <label
+              ><input type="radio" name="q27" value="explicit" />
+              explicit</label
+            ><br />
+            <label
+              ><input type="radio" name="q27" value="experimental" />
+              experimental</label
+            >
+            <div id="fb-q27" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">28.</span> Her ______ nature made her popular among colleagues.<br>
-                <label><input type="radio" name="q28" value="affable"> affable</label><br>
-                <label><input type="radio" name="q28" value="aloof"> aloof</label><br>
-                <label><input type="radio" name="q28" value="austere"> austere</label>
-                <div id="fb-q28" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">28.</span> Her ______ nature made her popular
+            among colleagues.<br />
+            <label
+              ><input type="radio" name="q28" value="affable" /> affable</label
+            ><br />
+            <label><input type="radio" name="q28" value="aloof" /> aloof</label
+            ><br />
+            <label
+              ><input type="radio" name="q28" value="austere" /> austere</label
+            >
+            <div id="fb-q28" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">29.</span> The scientist's theory was considered ______ by his peers.<br>
-                <label><input type="radio" name="q29" value="preposterous"> preposterous</label><br>
-                <label><input type="radio" name="q29" value="plausible"> plausible</label><br>
-                <label><input type="radio" name="q29" value="perfunctory"> perfunctory</label>
-                <div id="fb-q29" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">29.</span> The scientist's theory was considered
+            ______ by his peers.<br />
+            <label
+              ><input type="radio" name="q29" value="preposterous" />
+              preposterous</label
+            ><br />
+            <label
+              ><input type="radio" name="q29" value="plausible" />
+              plausible</label
+            ><br />
+            <label
+              ><input type="radio" name="q29" value="perfunctory" />
+              perfunctory</label
+            >
+            <div id="fb-q29" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">30.</span> The novel provides a ______ portrayal of Victorian society.<br>
-                <label><input type="radio" name="q30" value="vivid"> vivid</label><br>
-                <label><input type="radio" name="q30" value="vapid"> vapid</label><br>
-                <label><input type="radio" name="q30" value="vague"> vague</label>
-                <div id="fb-q30" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">30.</span> The novel provides a ______ portrayal
+            of Victorian society.<br />
+            <label><input type="radio" name="q30" value="vivid" /> vivid</label
+            ><br />
+            <label><input type="radio" name="q30" value="vapid" /> vapid</label
+            ><br />
+            <label><input type="radio" name="q30" value="vague" /> vague</label>
+            <div id="fb-q30" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">31.</span> Synonym for "ubiquitous":<br>
-                <input type="text" name="q31" placeholder="omnipresent/pervasive">
-                <div id="fb-q31" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">31.</span> Synonym for "ubiquitous":<br />
+            <input type="text" name="q31" placeholder="omnipresent/pervasive" />
+            <div id="fb-q31" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">32.</span> Antonym for "meticulous":<br>
-                <input type="text" name="q32" placeholder="careless/sloppy">
-                <div id="fb-q32" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">32.</span> Antonym for "meticulous":<br />
+            <input type="text" name="q32" placeholder="careless/sloppy" />
+            <div id="fb-q32" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">33.</span> Word meaning "to make something less intense":<br>
-                <input type="text" name="q33" placeholder="mitigate/alleviate">
-                <div id="fb-q33" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">33.</span> Word meaning "to make something less
+            intense":<br />
+            <input type="text" name="q33" placeholder="mitigate/alleviate" />
+            <div id="fb-q33" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">34.</span> Term for "a person who pretends to have virtues they don't possess":<br>
-                <input type="text" name="q34" placeholder="hypocrite">
-                <div id="fb-q34" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">34.</span> Term for "a person who pretends to
+            have virtues they don't possess":<br />
+            <input type="text" name="q34" placeholder="hypocrite" />
+            <div id="fb-q34" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">35.</span> Word meaning "characterized by conflict or argument":<br>
-                <input type="text" name="q35" placeholder="contentious/disputatious">
-                <div id="fb-q35" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">35.</span> Word meaning "characterized by
+            conflict or argument":<br />
+            <input
+              type="text"
+              name="q35"
+              placeholder="contentious/disputatious"
+            />
+            <div id="fb-q35" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">36.</span> The judge's decision was deemed ______ by legal experts.<br>
-                <label><input type="radio" name="q36" value="judicious"> judicious</label><br>
-                <label><input type="radio" name="q36" value="judicial"> judicial</label><br>
-                <label><input type="radio" name="q36" value="prejudicial"> prejudicial</label>
-                <div id="fb-q36" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">36.</span> The judge's decision was deemed ______
+            by legal experts.<br />
+            <label
+              ><input type="radio" name="q36" value="judicious" />
+              judicious</label
+            ><br />
+            <label
+              ><input type="radio" name="q36" value="judicial" />
+              judicial</label
+            ><br />
+            <label
+              ><input type="radio" name="q36" value="prejudicial" />
+              prejudicial</label
+            >
+            <div id="fb-q36" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">37.</span> The artist's work showed remarkable ______ in style.<br>
-                <label><input type="radio" name="q37" value="versatility"> versatility</label><br>
-                <label><input type="radio" name="q37" value="verbosity"> verbosity</label><br>
-                <label><input type="radio" name="q37" value="vexation"> vexation</label>
-                <div id="fb-q37" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">37.</span> The artist's work showed remarkable
+            ______ in style.<br />
+            <label
+              ><input type="radio" name="q37" value="versatility" />
+              versatility</label
+            ><br />
+            <label
+              ><input type="radio" name="q37" value="verbosity" />
+              verbosity</label
+            ><br />
+            <label
+              ><input type="radio" name="q37" value="vexation" />
+              vexation</label
+            >
+            <div id="fb-q37" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">38.</span> His ______ comments offended many attendees.<br>
-                <label><input type="radio" name="q38" value="disparaging"> disparaging</label><br>
-                <label><input type="radio" name="q38" value="encouraging"> encouraging</label><br>
-                <label><input type="radio" name="q38" value="enlightening"> enlightening</label>
-                <div id="fb-q38" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">38.</span> His ______ comments offended many
+            attendees.<br />
+            <label
+              ><input type="radio" name="q38" value="disparaging" />
+              disparaging</label
+            ><br />
+            <label
+              ><input type="radio" name="q38" value="encouraging" />
+              encouraging</label
+            ><br />
+            <label
+              ><input type="radio" name="q38" value="enlightening" />
+              enlightening</label
+            >
+            <div id="fb-q38" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">39.</span> The treaty aimed to ______ tensions between nations.<br>
-                <label><input type="radio" name="q39" value="ameliorate"> ameliorate</label><br>
-                <label><input type="radio" name="q39" value="exacerbate"> exacerbate</label><br>
-                <label><input type="radio" name="q39" value="accommodate"> accommodate</label>
-                <div id="fb-q39" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">39.</span> The treaty aimed to ______ tensions
+            between nations.<br />
+            <label
+              ><input type="radio" name="q39" value="ameliorate" />
+              ameliorate</label
+            ><br />
+            <label
+              ><input type="radio" name="q39" value="exacerbate" />
+              exacerbate</label
+            ><br />
+            <label
+              ><input type="radio" name="q39" value="accommodate" />
+              accommodate</label
+            >
+            <div id="fb-q39" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">40.</span> The professor's lecture was quite ______, covering numerous topics.<br>
-                <label><input type="radio" name="q40" value="comprehensive"> comprehensive</label><br>
-                <label><input type="radio" name="q40" value="compulsive"> compulsive</label><br>
-                <label><input type="radio" name="q40" value="competitive"> competitive</label>
-                <div id="fb-q40" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">40.</span> The professor's lecture was quite
+            ______, covering numerous topics.<br />
+            <label
+              ><input type="radio" name="q40" value="comprehensive" />
+              comprehensive</label
+            ><br />
+            <label
+              ><input type="radio" name="q40" value="compulsive" />
+              compulsive</label
+            ><br />
+            <label
+              ><input type="radio" name="q40" value="competitive" />
+              competitive</label
+            >
+            <div id="fb-q40" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">41.</span> Word meaning "existing in name only":<br>
-                <input type="text" name="q41" placeholder="nominal">
-                <div id="fb-q41" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">41.</span> Word meaning "existing in name
+            only":<br />
+            <input type="text" name="q41" placeholder="nominal" />
+            <div id="fb-q41" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">42.</span> Term for "excessive pride in appearance":<br>
-                <input type="text" name="q42" placeholder="vanity/narcissism">
-                <div id="fb-q42" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">42.</span> Term for "excessive pride in
+            appearance":<br />
+            <input type="text" name="q42" placeholder="vanity/narcissism" />
+            <div id="fb-q42" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">43.</span> Word meaning "to make amends for wrongdoing":<br>
-                <input type="text" name="q43" placeholder="atone/expiate">
-                <div id="fb-q43" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">43.</span> Word meaning "to make amends for
+            wrongdoing":<br />
+            <input type="text" name="q43" placeholder="atone/expiate" />
+            <div id="fb-q43" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">44.</span> Term for "a subtle difference in meaning":<br>
-                <input type="text" name="q44" placeholder="nuance">
-                <div id="fb-q44" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">44.</span> Term for "a subtle difference in
+            meaning":<br />
+            <input type="text" name="q44" placeholder="nuance" />
+            <div id="fb-q44" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">45.</span> Word meaning "to establish the truth of something":<br>
-                <input type="text" name="q45" placeholder="substantiate/corroborate">
-                <div id="fb-q45" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">45.</span> Word meaning "to establish the truth
+            of something":<br />
+            <input
+              type="text"
+              name="q45"
+              placeholder="substantiate/corroborate"
+            />
+            <div id="fb-q45" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">46.</span> The CEO's ______ management style alienated employees.<br>
-                <label><input type="radio" name="q46" value="authoritarian"> authoritarian</label><br>
-                <label><input type="radio" name="q46" value="collaborative"> collaborative</label><br>
-                <label><input type="radio" name="q46" value="democratic"> democratic</label>
-                <div id="fb-q46" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">46.</span> The CEO's ______ management style
+            alienated employees.<br />
+            <label
+              ><input type="radio" name="q46" value="authoritarian" />
+              authoritarian</label
+            ><br />
+            <label
+              ><input type="radio" name="q46" value="collaborative" />
+              collaborative</label
+            ><br />
+            <label
+              ><input type="radio" name="q46" value="democratic" />
+              democratic</label
+            >
+            <div id="fb-q46" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">47.</span> The research findings were ______ with previous studies.<br>
-                <label><input type="radio" name="q47" value="congruent"> congruent</label><br>
-                <label><input type="radio" name="q47" value="incongruous"> incongruous</label><br>
-                <label><input type="radio" name="q47" value="indifferent"> indifferent</label>
-                <div id="fb-q47" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">47.</span> The research findings were ______ with
+            previous studies.<br />
+            <label
+              ><input type="radio" name="q47" value="congruent" />
+              congruent</label
+            ><br />
+            <label
+              ><input type="radio" name="q47" value="incongruous" />
+              incongruous</label
+            ><br />
+            <label
+              ><input type="radio" name="q47" value="indifferent" />
+              indifferent</label
+            >
+            <div id="fb-q47" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">48.</span> His explanation was so ______ that few understood it.<br>
-                <label><input type="radio" name="q48" value="convoluted"> convoluted</label><br>
-                <label><input type="radio" name="q48" value="straightforward"> straightforward</label><br>
-                <label><input type="radio" name="q48" value="elementary"> elementary</label>
-                <div id="fb-q48" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">48.</span> His explanation was so ______ that few
+            understood it.<br />
+            <label
+              ><input type="radio" name="q48" value="convoluted" />
+              convoluted</label
+            ><br />
+            <label
+              ><input type="radio" name="q48" value="straightforward" />
+              straightforward</label
+            ><br />
+            <label
+              ><input type="radio" name="q48" value="elementary" />
+              elementary</label
+            >
+            <div id="fb-q48" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">49.</span> The witness gave a ______ account of the events.<br>
-                <label><input type="radio" name="q49" value="lucid"> lucid</label><br>
-                <label><input type="radio" name="q49" value="murky"> murky</label><br>
-                <label><input type="radio" name="q49" value="ambiguous"> ambiguous</label>
-                <div id="fb-q49" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">49.</span> The witness gave a ______ account of
+            the events.<br />
+            <label><input type="radio" name="q49" value="lucid" /> lucid</label
+            ><br />
+            <label><input type="radio" name="q49" value="murky" /> murky</label
+            ><br />
+            <label
+              ><input type="radio" name="q49" value="ambiguous" />
+              ambiguous</label
+            >
+            <div id="fb-q49" class="feedback"></div>
+          </div>
 
-            <div class="question">
-                <span class="qnum">50.</span> The committee's decision was ______ to appeal.<br>
-                <label><input type="radio" name="q50" value="amenable"> amenable</label><br>
-                <label><input type="radio" name="q50" value="amiable"> amiable</label><br>
-                <label><input type="radio" name="q50" value="amicable"> amicable</label>
-                <div id="fb-q50" class="feedback"></div>
-            </div>
+          <div class="question">
+            <span class="qnum">50.</span> The committee's decision was ______ to
+            appeal.<br />
+            <label
+              ><input type="radio" name="q50" value="amenable" />
+              amenable</label
+            ><br />
+            <label
+              ><input type="radio" name="q50" value="amiable" /> amiable</label
+            ><br />
+            <label
+              ><input type="radio" name="q50" value="amicable" />
+              amicable</label
+            >
+            <div id="fb-q50" class="feedback"></div>
+          </div>
         </div>
 
         <div class="controls">
-            <button type="button" onclick="submitTest()">Submit Test</button>
+          <button type="button" onclick="submitTest()">Submit Test</button>
         </div>
 
         <div id="resultBox"></div>
-    </form>
+      </form>
     </main>
     <footer class="test-footer">
-        <p>&copy; 2025 Supernova. Developer - <a href="https://myurls.co/mshslink" class="footer-anchor"> mshsacc</a></p>
+      <p>
+        &copy; 2025 Supernova. Developer -
+        <a href="https://myurls.co/mshslink" class="footer-anchor"> mshsacc</a>
+      </p>
     </footer>
 
     <script src="../scripts/main.js"></script>
     <script src="../scripts/test-common.js"></script>
     <script src="../scripts/advanced-test.js"></script>
-</body>
+  </body>
 </html>
