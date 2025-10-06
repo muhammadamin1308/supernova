@@ -15,14 +15,25 @@ body {
     text-align: center;
     margin-bottom: 30px;
     padding: 20px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #2563eb 0%, #1e40af 50%, #1d4ed8 100%);
     color: white;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.2);
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    border: 2px solid rgba(255,255,255,0.8);
 }
 
 .test-header h1 {
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
     font-size: 2.5rem;
 }
 
@@ -44,7 +55,7 @@ body {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: rgba(102, 126, 234, 0.9);
+    background: rgba(37, 99, 235, 0.9);
     color: white;
     padding: 12px 20px;
     border-radius: 25px;
@@ -167,8 +178,8 @@ input[type="text"] {
 
 input[type="text"]:focus {
     outline: none;
-    border-color: #667eea;
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
 
 select {
@@ -181,7 +192,7 @@ select {
 
 select:focus {
     outline: none;
-    border-color: #667eea;
+    border-color: #2563eb;
 }
 
 /* Feedback Styles */
@@ -211,7 +222,7 @@ select:focus {
 }
 
 button {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
     color: white;
     padding: 12px 30px;
     border: none;
@@ -224,7 +235,7 @@ button {
 
 button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.4);
 }
 
 button:active {
@@ -266,7 +277,7 @@ button:active {
 
 .progress-bar {
     height: 5px;
-    background: linear-gradient(90deg, #667eea, #764ba2);
+    background: linear-gradient(90deg, #2563eb, #1d4ed8);
     width: 0%;
     transition: width 0.5s ease;
 }
