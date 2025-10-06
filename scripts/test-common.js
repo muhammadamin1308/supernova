@@ -290,3 +290,28 @@ function clearTestForm() {
         progressBar.style.width = '0%';
     }
 }
+
+// Handle timer positioning relative to footer
+function handleTimerPosition() {
+    const timer = document.getElementById('timer');
+    const footer = document.querySelector('.test-footer');
+    
+    if (!timer || !footer) return;
+    
+    const footerRect = footer.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+    
+    // If footer is visible in viewport, move timer up
+    if (footerRect.top < windowHeight) {
+        timer.classList.add('above-footer');
+    } else {
+        timer.classList.remove('above-footer');
+    }
+}
+
+// Add scroll event listener for timer positioning
+window.addEventListener('scroll', handleTimerPosition);
+window.addEventListener('resize', handleTimerPosition);
+
+// Initialize timer position on page load
+document.addEventListener('DOMContentLoaded', handleTimerPosition);
