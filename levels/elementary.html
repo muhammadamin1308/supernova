@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Elementary Level Test</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="../styles/test.css">
+</head>
+<body>
+    <div class="test-header">
+        <h1>Elementary Level Test</h1>
+        <div class="test-info">
+            <span class="small">Grammar, Vocabulary, Reading, Listening • 105 questions • Total: 105 points</span>
+            <a href="../index.html" class="back-button">← Back to Home</a>
+        </div>
+    </div>
+
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
+
+    <!-- Fixed Timer -->
+    <div class="timer" id="timer">⏱️ 45:00</div>
+
+  <form id="examForm">
+
+    <!-- ========== GRAMMAR (40 pts) ==========
+         Part1: Q1–Q16 (16 MC)
+         Part2: Q17–Q26 (10 one-word fill)
+         Part3: Q27–Q40 (14 MC)
+         Each question = 1 point. -->
+    <div class="section" id="grammarSection">
+      <h2>Grammar — 40 points</h2>
+
+      <!-- Part1: Q1 - Q16 -->
+      <div class="question">
+        <span class="qnum">Q1.</span> Tod ______ TV at the moment.<br>
+        <label><input type="radio" name="g1" value="is watching"> is watching</label><br>
+        <label><input type="radio" name="g1" value="’s watching"> ’s watching</label><br>
+        <label><input type="radio" name="g1" value="watches"> watches</label>
+        <div id="fb-g1" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q2.</span> The sports hall ______ on Wednesdays.<br>
+        <label><input type="radio" name="g2" value="isn't cleaned"> isn't cleaned</label><br>
+        <label><input type="radio" name="g2" value="doesn't clean"> doesn't clean</label>
+        <div id="fb-g2" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q3.</span> Ella ______ blonde hair, but now she’s quite dark.<br>
+        <label><input type="radio" name="g3" value="used to have"> used to have</label><br>
+        <label><input type="radio" name="g3" value="has"> has</label>
+        <div id="fb-g3" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q4.</span> He ______ look for a job next month.<br>
+        <label><input type="radio" name="g4" value="'s going to look for"> 's going to look for</label><br>
+        <label><input type="radio" name="g4" value="is going to look for"> is going to look for</label>
+        <div id="fb-g4" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q5.</span> What ______ he ______ when he opened the door?<br>
+        <label><input type="radio" name="g5" value="did … find"> did … find</label><br>
+        <label><input type="radio" name="g5" value="had … found"> had … found</label>
+        <div id="fb-g5" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q6.</span> She ______ out last night; she went home after work.<br>
+        <label><input type="radio" name="g6" value="didn't go"> didn't go</label><br>
+        <label><input type="radio" name="g6" value="didn't went"> didn't went</label>
+        <div id="fb-g6" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q7.</span> I ______ to the USA five times. How about you?<br>
+        <label><input type="radio" name="g7" value="have been"> 've been / have been</label><br>
+        <label><input type="radio" name="g7" value="was"> was</label>
+        <div id="fb-g7" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q8.</span> When we arrived, they ______ already ______ – the house was empty.<br>
+        <label><input type="radio" name="g8" value="had ... left"> 'd / had … left</label><br>
+        <label><input type="radio" name="g8" value="have ... left"> have … left</label>
+        <div id="fb-g8" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q9.</span> They ______ to the teacher at the moment.<br>
+        <label><input type="radio" name="g9" value="aren't listening"> aren't listening</label><br>
+        <label><input type="radio" name="g9" value="don't listen"> don't listen</label>
+        <div id="fb-g9" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q10.</span> ______ you ever ______ a giraffe?<br>
+        <label><input type="radio" name="g10" value="Have ... seen"> Have ... seen</label><br>
+        <label><input type="radio" name="g10" value="Did ... see"> Did ... see</label>
+        <div id="fb-g10" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q11.</span> She ______ her new boss last week.<br>
+        <label><input type="radio" name="g11" value="met"> met</label><br>
+        <label><input type="radio" name="g11" value="has met"> has met</label>
+        <div id="fb-g11" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q12.</span> Happy anniversary! How long ______ you ______ married?<br>
+        <label><input type="radio" name="g12" value="have ... been"> have … been</label><br>
+        <label><input type="radio" name="g12" value="did ... be"> did … be</label>
+        <div id="fb-g12" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q13.</span> I don’t think it ______ this week. It’s too warm.<br>
+        <label><input type="radio" name="g13" value="is going to snow"> 's going to snow / is going to snow</label><br>
+        <label><input type="radio" name="g13" value="will snow"> will snow</label><br>
+        <label><input type="radio" name="g13" value="snows"> snows</label>
+        <div id="fb-g13" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q14.</span> He ______ lunch when we arrived, so we offered to help.<br>
+        <label><input type="radio" name="g14" value="was cooking"> was cooking</label><br>
+        <label><input type="radio" name="g14" value="cooked"> cooked</label>
+        <div id="fb-g14" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q15.</span> We left the cinema because we ______ the film before.<br>
+        <label><input type="radio" name="g15" value="had seen"> 'd seen / had seen</label><br>
+        <label><input type="radio" name="g15" value="saw"> saw</label>
+        <div id="fb-g15" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q16.</span> Pizza ______ with flour, oil, tomatoes and cheese.<br>
+        <label><input type="radio" name="g16" value="is made"> is made</label><br>
+        <label><input type="radio" name="g16" value="makes"> makes</label>
+        <div id="fb-g16" class="feedback"></div>
+      </div>
+
+      <hr style="margin:16px 0">
+
+      <!-- Part2 (one-word fills) Q17 - Q26 -->
+      <div class="question">
+        <span class="qnum">Q17.</span> How ______ bread do you eat? <br>
+        <input type="text" name="g17" id="g17" placeholder="one word answer">
+        <div id="fb-g17" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q18.</span> I ______ do the washing up now. I’ll do it later. <br>
+        <input type="text" name="g18" id="g18" placeholder="one word answer">
+        <div id="fb-g18" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q19.</span> A chemist’s is a place ______ you buy medicines. <br>
+        <input type="text" name="g19" id="g19" placeholder="one word answer">
+        <div id="fb-g19" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q20.</span>
+        A: I don’t like Chinese food.
+        <br>B: ______ do I. <br>
+        <input type="text" name="g20" id="g20" placeholder="one word answer">
+        <div id="fb-g20" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q21.</span> Put ______ some shoes. We’re going outside. <br>
+        <input type="text" name="g21" id="g21" placeholder="one word answer">
+        <div id="fb-g21" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q22.</span> We walked ______ of the shop, because the music was too loud. <br>
+        <input type="text" name="g22" id="g22" placeholder="one word answer">
+        <div id="fb-g22" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q23.</span> ______ it was a warm day, she wore a big winter coat. <br>
+        <input type="text" name="g23" id="g23" placeholder="one word answer">
+        <div id="fb-g23" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q24.</span> I went to Rome ______ learn Italian. <br>
+        <input type="text" name="g24" id="g24" placeholder="one word answer">
+        <div id="fb-g24" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q25.</span> What ______ you do if it rains this afternoon? <br>
+        <input type="text" name="g25" id="g25" placeholder="one word answer">
+        <div id="fb-g25" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q26.</span> A: Have you heard the news? B: No, not ______. <br>
+        <input type="text" name="g26" id="g26" placeholder="one word answer">
+        <div id="fb-g26" class="feedback"></div>
+      </div>
+
+      <hr style="margin:16px 0">
+
+      <!-- Part3: Q27 - Q40 -->
+      <div class="question">
+        <span class="qnum">Q27.</span> You must / mustn’t listen to your teacher. She’s trying to help you. (Choose correct) <br>
+        <label><input type="radio" name="g27" value="must"> must</label><br>
+        <label><input type="radio" name="g27" value="mustn't"> mustn't</label>
+        <div id="fb-g27" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q28.</span> This is the best / better museum I’ve ever visited. <br>
+        <label><input type="radio" name="g28" value="best"> best</label><br>
+        <label><input type="radio" name="g28" value="better"> better</label>
+        <div id="fb-g28" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q29.</span> This bike’s most / more expensive than mine. <br>
+        <label><input type="radio" name="g29" value="more"> more</label><br>
+        <label><input type="radio" name="g29" value="most"> most</label>
+        <div id="fb-g29" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q30.</span> He’s eaten too many / too much cakes, and now he feels ill! <br>
+        <label><input type="radio" name="g30" value="too many"> too many</label><br>
+        <label><input type="radio" name="g30" value="too much"> too much</label>
+        <div id="fb-g30" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q31.</span> You mustn’t / don’t have to wear a uniform at work if you don’t want to. <br>
+        <label><input type="radio" name="g31" value="mustn't"> mustn't</label><br>
+        <label><input type="radio" name="g31" value="don't have to"> don't have to</label>
+        <div id="fb-g31" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q32.</span> You don’t do enough / too housework. I have to do it all! <br>
+        <label><input type="radio" name="g32" value="enough"> enough</label><br>
+        <label><input type="radio" name="g32" value="too"> too</label>
+        <div id="fb-g32" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q33.</span> We had a boring weekend. We didn’t have anything / nothing to do. <br>
+        <label><input type="radio" name="g33" value="anything"> anything</label><br>
+        <label><input type="radio" name="g33" value="nothing"> nothing</label>
+        <div id="fb-g33" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q34.</span> You don’t have to / should try on this shirt. I think it’ll look great on you. <br>
+        <label><input type="radio" name="g34" value="don't have to"> don't have to</label><br>
+        <label><input type="radio" name="g34" value="should"> should</label>
+        <div id="fb-g34" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q35.</span> They might / must go to the beach tomorrow – if the weather’s hot. <br>
+        <label><input type="radio" name="g35" value="might"> might</label><br>
+        <label><input type="radio" name="g35" value="must"> must</label>
+        <div id="fb-g35" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q36.</span> Wait! You walk more quickly / quicker than me. <br>
+        <label><input type="radio" name="g36" value="quickly"> quickly</label><br>
+        <label><input type="radio" name="g36" value="quicker"> quicker</label>
+        <div id="fb-g36" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q37.</span> Who did paint / painted this picture? It’s great! <br>
+        <label><input type="radio" name="g37" value="painted"> painted</label><br>
+        <label><input type="radio" name="g37" value="did paint"> did paint</label>
+        <div id="fb-g37" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q38.</span> She said / told us she was busy this weekend. <br>
+        <label><input type="radio" name="g38" value="said"> said</label><br>
+        <label><input type="radio" name="g38" value="told"> told</label>
+        <div id="fb-g38" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q39.</span> Walking / Walk in the country makes me feel great. <br>
+        <label><input type="radio" name="g39" value="Walking"> Walking</label><br>
+        <label><input type="radio" name="g39" value="Walk"> Walk</label>
+        <div id="fb-g39" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">Q40.</span> If I didn’t have to, I won’t / wouldn't go to that conference. <br>
+        <label><input type="radio" name="g40" value="wouldn't"> wouldn't</label><br>
+        <label><input type="radio" name="g40" value="won't"> won't</label>
+        <div id="fb-g40" class="feedback"></div>
+      </div>
+    </div>
+
+    <!-- ========== VOCABULARY (40 pts) ==========
+         v1..v40 each 1 point. -->
+    <div class="section" id="vocabSection">
+      <h2>Vocabulary — 40 points</h2>
+
+      <!-- Part 4 (odd one out) 5 items -->
+      <div class="question">
+        <span class="qnum">V1.</span> Which is odd one out? fly / mosquito / dolphin / bee<br>
+        <label><input type="radio" name="v1" value="fly"> fly</label><br>
+        <label><input type="radio" name="v1" value="mosquito"> mosquito</label><br>
+        <label><input type="radio" name="v1" value="dolphin"> dolphin</label><br>
+        <label><input type="radio" name="v1" value="bee"> bee</label>
+        <div id="fb-v1" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">V2.</span> palace / statue / receipt / castle (odd one out)<br>
+        <label><input type="radio" name="v2" value="palace"> palace</label><br>
+        <label><input type="radio" name="v2" value="statue"> statue</label><br>
+        <label><input type="radio" name="v2" value="receipt"> receipt</label><br>
+        <label><input type="radio" name="v2" value="castle"> castle</label>
+        <div id="fb-v2" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">V3.</span> talkative / polluted / crowded / dangerous (odd one out)<br>
+        <label><input type="radio" name="v3" value="talkative"> talkative</label><br>
+        <label><input type="radio" name="v3" value="polluted"> polluted</label><br>
+        <label><input type="radio" name="v3" value="crowded"> crowded</label><br>
+        <label><input type="radio" name="v3" value="dangerous"> dangerous</label>
+        <div id="fb-v3" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">V4.</span> sightseeing / ironing / camping / sunbathing (odd one out)<br>
+        <label><input type="radio" name="v4" value="sightseeing"> sightseeing</label><br>
+        <label><input type="radio" name="v4" value="ironing"> ironing</label><br>
+        <label><input type="radio" name="v4" value="camping"> camping</label><br>
+        <label><input type="radio" name="v4" value="sunbathing"> sunbathing</label>
+        <div id="fb-v4" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">V5.</span> jeans / leggings / tights / gloves (odd one out)<br>
+        <label><input type="radio" name="v5" value="jeans"> jeans</label><br>
+        <label><input type="radio" name="v5" value="leggings"> leggings</label><br>
+        <label><input type="radio" name="v5" value="tights"> tights</label><br>
+        <label><input type="radio" name="v5" value="gloves"> gloves</label>
+        <div id="fb-v5" class="feedback"></div>
+      </div>
+
+      <hr style="margin:10px 0">
+
+      <!-- Part5: complete sentences with correct word (14 items v6..v19 names) -->
+      <div class="question">
+        <span class="qnum">V6.</span> David ______ me he wanted to get a burger. (told / said / replied)<br>
+        <label><input type="radio" name="v6" value="told"> told</label><br>
+        <label><input type="radio" name="v6" value="said"> said</label><br>
+        <label><input type="radio" name="v6" value="replied"> replied</label>
+        <div id="fb-v6" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">V7.</span> We ______ a really good time at the festival. (spent / had / did)<br>
+        <label><input type="radio" name="v7" value="spent"> spent</label><br>
+        <label><input type="radio" name="v7" value="had"> had</label><br>
+        <label><input type="radio" name="v7" value="did"> did</label>
+        <div id="fb-v7" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">V8.</span> My brother is my aunt’s ______. (niece / grandson / nephew)<br>
+        <label><input type="radio" name="v8" value="niece"> niece</label><br>
+        <label><input type="radio" name="v8" value="grandson"> grandson</label><br>
+        <label><input type="radio" name="v8" value="nephew"> nephew</label>
+        <div id="fb-v8" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">V9.</span> Put your lights on. We’re going to drive ______ a tunnel! (through / under / across)<br>
+        <label><input type="radio" name="v9" value="through"> through</label><br>
+        <label><input type="radio" name="v9" value="under"> under</label><br>
+        <label><input type="radio" name="v9" value="across"> across</label>
+        <div id="fb-v9" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">V10.</span> The opposite of crowded is ______. (clean / safe / empty)<br>
+        <label><input type="radio" name="v10" value="clean"> clean</label><br>
+        <label><input type="radio" name="v10" value="safe"> safe</label><br>
+        <label><input type="radio" name="v10" value="empty"> empty</label>
+        <div id="fb-v10" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">V11.</span> Kate’s really ______. She always gives me presents. (mean / lazy / generous)<br>
+        <label><input type="radio" name="v11" value="mean"> mean</label><br>
+        <label><input type="radio" name="v11" value="lazy"> lazy</label><br>
+        <label><input type="radio" name="v11" value="generous"> generous</label>
+        <div id="fb-v11" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">V12.</span> Can you turn ______ the TV? I want to watch the news. (on / in / off)<br>
+        <label><input type="radio" name="v12" value="on"> on</label><br>
+        <label><input type="radio" name="v12" value="in"> in</label><br>
+        <label><input type="radio" name="v12" value="off"> off</label>
+        <div id="fb-v12" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">V13.</span> Is he looking ______ to the party? (after / for / forward)<br>
+        <label><input type="radio" name="v13" value="after"> after</label><br>
+        <label><input type="radio" name="v13" value="for"> for</label><br>
+        <label><input type="radio" name="v13" value="forward"> forward</label>
+        <div id="fb-v13" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">V14.</span> Those jeans look nice. Would you like to ______ them on? (take / try / wear)<br>
+        <label><input type="radio" name="v14" value="take"> take</label><br>
+        <label><input type="radio" name="v14" value="try"> try</label><br>
+        <label><input type="radio" name="v14" value="wear"> wear</label>
+        <div id="fb-v14" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">V15.</span> Enter our competition now! You could ______ a great prize. (win / earn / make)<br>
+        <label><input type="radio" name="v15" value="win"> win</label><br>
+        <label><input type="radio" name="v15" value="earn"> earn</label><br>
+        <label><input type="radio" name="v15" value="make"> make</label>
+        <div id="fb-v15" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">V16.</span> Our new school year starts ______ 5th September. (in / on / at)<br>
+        <label><input type="radio" name="v16" value="in"> in</label><br>
+        <label><input type="radio" name="v16" value="on"> on</label><br>
+        <label><input type="radio" name="v16" value="at"> at</label>
+        <div id="fb-v16" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">V17.</span> We haven’t got much money ______ we aren’t going to buy the flat. (because / so / although)<br>
+        <label><input type="radio" name="v17" value="because"> because</label><br>
+        <label><input type="radio" name="v17" value="so"> so</label><br>
+        <label><input type="radio" name="v17" value="although"> although</label>
+        <div id="fb-v17" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">V18.</span> He ______ on really well with his sister. (does / gets / makes)<br>
+        <label><input type="radio" name="v18" value="does"> does</label><br>
+        <label><input type="radio" name="v18" value="gets"> gets</label><br>
+        <label><input type="radio" name="v18" value="makes"> makes</label>
+        <div id="fb-v18" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">V19.</span> I’m not ______ good at languages. I find them difficult. (bit / quite / very)<br>
+        <label><input type="radio" name="v19" value="bit"> bit</label><br>
+        <label><input type="radio" name="v19" value="quite"> quite</label><br>
+        <label><input type="radio" name="v19" value="very"> very</label>
+        <div id="fb-v19" class="feedback"></div>
+      </div>
+
+      <hr style="margin:10px 0">
+
+      <!-- Part6: Write the opposite (6 items) v20..v25 -->
+      <div class="question">
+        <span class="qnum">V20.</span> Opposite of borrow: <input type="text" name="v20" id="v20" placeholder="one word">
+        <div id="fb-v20" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">V21.</span> Opposite of generous: <input type="text" name="v21" id="v21" placeholder="one word">
+        <div id="fb-v21" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">V22.</span> Opposite of interesting: <input type="text" name="v22" id="v22" placeholder="one word">
+        <div id="fb-v22" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">V23.</span> Opposite of remember: <input type="text" name="v23" id="v23" placeholder="one word">
+        <div id="fb-v23" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">V24.</span> Opposite of find: <input type="text" name="v24" id="v24" placeholder="one word">
+        <div id="fb-v24" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">V25.</span> Opposite of dangerous: <input type="text" name="v25" id="v25" placeholder="one word">
+        <div id="fb-v25" class="feedback"></div>
+      </div>
+
+      <hr style="margin:10px 0">
+
+      <!-- Part7: prepositions (8 items) v26..v33 -->
+      <div class="question">
+        <span class="qnum">V26.</span> Be careful when you jump ______ the swimming pool. <input type="text" name="v26" id="v26"><div id="fb-v26" class="feedback"></div>
+      </div>
+      <div class="question">
+        <span class="qnum">V27.</span> I’m not sure if I can come camping. It depends ______ my work. <input type="text" name="v27" id="v27"><div id="fb-v27" class="feedback"></div>
+      </div>
+      <div class="question">
+        <span class="qnum">V28.</span> Did you wait long ______ your train? <input type="text" name="v28" id="v28"><div id="fb-v28" class="feedback"></div>
+      </div>
+      <div class="question">
+        <span class="qnum">V29.</span> Harry’s worried ______ his driving test tomorrow. <input type="text" name="v29" id="v29"><div id="fb-v29" class="feedback"></div>
+      </div>
+      <div class="question">
+        <span class="qnum">V30.</span> Leo fell in love ______ his girlfriend soon after they met. <input type="text" name="v30" id="v30"><div id="fb-v30" class="feedback"></div>
+      </div>
+      <div class="question">
+        <span class="qnum">V31.</span> Can you pay ______ the tickets today? <input type="text" name="v31" id="v31"><div id="fb-v31" class="feedback"></div>
+      </div>
+      <div class="question">
+        <span class="qnum">V32.</span> Please write ______ me soon, and tell me all your news. <input type="text" name="v32" id="v32"><div id="fb-v32" class="feedback"></div>
+      </div>
+      <div class="question">
+        <span class="qnum">V33.</span> What time did you arrive ______ school? Were you late? <input type="text" name="v33" id="v33"><div id="fb-v33" class="feedback"></div>
+      </div>
+
+      <hr style="margin:10px 0">
+
+      <!-- Part8: one-word completions (7 items) v34..v40 -->
+      <div class="question">
+        <span class="qnum">V34.</span> Can you ______ the dog for a walk? <input type="text" name="v34" id="v34"><div id="fb-v34" class="feedback"></div>
+      </div>
+      <div class="question">
+        <span class="qnum">V35.</span> I’m taking this watch ______ to the shop. It doesn’t work. <input type="text" name="v35" id="v35"><div id="fb-v35" class="feedback"></div>
+      </div>
+      <div class="question">
+        <span class="qnum">V36.</span> Work ______ pairs to do this next exercise. <input type="text" name="v36" id="v36"><div id="fb-v36" class="feedback"></div>
+      </div>
+      <div class="question">
+        <span class="qnum">V37.</span> Don’t run ______ the road! It’s dangerous. <input type="text" name="v37" id="v37"><div id="fb-v37" class="feedback"></div>
+      </div>
+      <div class="question">
+        <span class="qnum">V38.</span> Let’s ______ Fred to the party on Saturday. <input type="text" name="v38" id="v38"><div id="fb-v38" class="feedback"></div>
+      </div>
+      <div class="question">
+        <span class="qnum">V39.</span> Shall we ______ surfing tomorrow? <input type="text" name="v39" id="v39"><div id="fb-v39" class="feedback"></div>
+      </div>
+      <div class="question">
+        <span class="qnum">V40.</span> Don’t ______ so much noise! I’m trying to study. <input type="text" name="v40" id="v40"><div id="fb-v40" class="feedback"></div>
+      </div>
+
+    </div>
+
+    <!-- ========== READING (15 pts) ==========
+         r1..r10 True/False/Doesn't say (10)
+         r11..r15 short answers (5) -->
+    <div class="section" id="readingSection">
+      <h2>Reading — 15 points</h2>
+      <p class="small">Read the article (included in the paper). For the online exam use the T/F/Doesn't say answers below.</p>
+
+      <!-- r1..r10 -->
+      <div class="question">
+        <span class="qnum">R1.</span> Most people don’t find it difficult to remember recent events. <br>
+        <label><input type="radio" name="r1" value="A"> True</label><br>
+        <label><input type="radio" name="r1" value="B"> False</label><br>
+        <label><input type="radio" name="r1" value="C"> Doesn’t say</label>
+        <div id="fb-r1" class="feedback"></div>
+      </div>
+      <div class="question">
+        <span class="qnum">R2.</span> People find it easier to remember their own lives than world events. <br>
+        <label><input type="radio" name="r2" value="A"> True</label><br>
+        <label><input type="radio" name="r2" value="B"> False</label><br>
+        <label><input type="radio" name="r2" value="C"> Doesn’t say</label>
+        <div id="fb-r2" class="feedback"></div>
+      </div>
+      <div class="question">
+        <span class="qnum">R3.</span> We generally think that it’s useful to forget small things. <br>
+        <label><input type="radio" name="r3" value="A"> True</label><br>
+        <label><input type="radio" name="r3" value="B"> False</label><br>
+        <label><input type="radio" name="r3" value="C"> Doesn’t say</label>
+        <div id="fb-r3" class="feedback"></div>
+      </div>
+      <div class="question">
+        <span class="qnum">R4.</span> Rita Howard is best at remembering things which happened a long time ago. <br>
+        <label><input type="radio" name="r4" value="A"> True</label><br>
+        <label><input type="radio" name="r4" value="B"> False</label><br>
+        <label><input type="radio" name="r4" value="C"> Doesn’t say</label>
+        <div id="fb-r4" class="feedback"></div>
+      </div>
+      <div class="question">
+        <span class="qnum">R5.</span> When she was young, Rita thought everyone had an excellent memory. <br>
+        <label><input type="radio" name="r5" value="A"> True</label><br>
+        <label><input type="radio" name="r5" value="B"> False</label><br>
+        <label><input type="radio" name="r5" value="C"> Doesn’t say</label>
+        <div id="fb-r5" class="feedback"></div>
+      </div>
+      <div class="question">
+        <span class="qnum">R6.</span> People noticed her ability to memorize information when she was at school. <br>
+        <label><input type="radio" name="r6" value="A"> True</label><br>
+        <label><input type="radio" name="r6" value="B"> False</label><br>
+        <label><input type="radio" name="r6" value="C"> Doesn’t say</label>
+        <div id="fb-r6" class="feedback"></div>
+      </div>
+      <div class="question">
+        <span class="qnum">R7.</span> People expect Rita to know about things that she hasn’t experienced. <br>
+        <label><input type="radio" name="r7" value="A"> True</label><br>
+        <label><input type="radio" name="r7" value="B"> False</label><br>
+        <label><input type="radio" name="r7" value="C"> Doesn’t say</label>
+        <div id="fb-r7" class="feedback"></div>
+      </div>
+      <div class="question">
+        <span class="qnum">R8.</span> Everyone’s brain has as many memories as Rita’s. <br>
+        <label><input type="radio" name="r8" value="A"> True</label><br>
+        <label><input type="radio" name="r8" value="B"> False</label><br>
+        <label><input type="radio" name="r8" value="C"> Doesn’t say</label>
+        <div id="fb-r8" class="feedback"></div>
+      </div>
+      <div class="question">
+        <span class="qnum">R9.</span> Rita is working as a historian. <br>
+        <label><input type="radio" name="r9" value="A"> True</label><br>
+        <label><input type="radio" name="r9" value="B"> False</label><br>
+        <label><input type="radio" name="r9" value="C"> Doesn’t say</label>
+        <div id="fb-r9" class="feedback"></div>
+      </div>
+      <div class="question">
+        <span class="qnum">R10.</span> Age hasn’t changed Rita’s abilities. <br>
+        <label><input type="radio" name="r10" value="A"> True</label><br>
+        <label><input type="radio" name="r10" value="B"> False</label><br>
+        <label><input type="radio" name="r10" value="C"> Doesn’t say</label>
+        <div id="fb-r10" class="feedback"></div>
+      </div>
+
+      <hr style="margin:10px 0">
+
+      <!-- r11..r15 short answer -->
+      <div class="question">
+        <span class="qnum">R11.</span> Which two details? (short) <br>
+        <input type="text" id="r11" placeholder="short answer"><div id="fb-r11" class="feedback"></div>
+      </div>
+      <div class="question">
+        <span class="qnum">R12.</span> What kind of information do most people forget? <br>
+        <input type="text" id="r12" placeholder="short answer"><div id="fb-r12" class="feedback"></div>
+      </div>
+      <div class="question">
+        <span class="qnum">R13.</span> How old is Rita Howard? <br>
+        <input type="text" id="r13" placeholder="number"><div id="fb-r13" class="feedback"></div>
+      </div>
+      <div class="question">
+        <span class="qnum">R14.</span> What kind of student was she? <br>
+        <input type="text" id="r14" placeholder="short answer"><div id="fb-r14" class="feedback"></div>
+      </div>
+      <div class="question">
+        <span class="qnum">R15.</span> What did she expect to happen after retirement? <br>
+        <input type="text" id="r15" placeholder="short answer"><div id="fb-r15" class="feedback"></div>
+      </div>
+
+    </div>
+
+    <!-- ========== LISTENING (10 pts) ==========
+         l1..l5 T/F
+         l6..l10 matching conv->A-E (select A-E)
+    -->
+    <div class="section" id="listeningSection">
+      <h2>Listening — 10 points</h2>
+
+      <!-- l1..l5 -->
+      <div class="question">
+        <span class="qnum">L1.</span> The book group is on at the wrong time for Tom. <br>
+        <label><input type="radio" name="l1" value="A"> True</label><br>
+        <label><input type="radio" name="l1" value="B"> False</label>
+        <div id="fb-l1" class="feedback"></div>
+      </div>
+      <div class="question">
+        <span class="qnum">L2.</span> Tom has just bought a new camera. <br>
+        <label><input type="radio" name="l2" value="A"> True</label><br>
+        <label><input type="radio" name="l2" value="B"> False</label>
+        <div id="fb-l2" class="feedback"></div>
+      </div>
+      <div class="question">
+        <span class="qnum">L3.</span> Tom’s course is all done on a computer. <br>
+        <label><input type="radio" name="l3" value="A"> True</label><br>
+        <label><input type="radio" name="l3" value="B"> False</label>
+        <div id="fb-l3" class="feedback"></div>
+      </div>
+      <div class="question">
+        <span class="qnum">L4.</span> The college is near a cinema. <br>
+        <label><input type="radio" name="l4" value="A"> True</label><br>
+        <label><input type="radio" name="l4" value="B"> False</label>
+        <div id="fb-l4" class="feedback"></div>
+      </div>
+      <div class="question">
+        <span class="qnum">L5.</span> Sally wants to study on the same evening as Tom. <br>
+        <label><input type="radio" name="l5" value="A"> True</label><br>
+        <label><input type="radio" name="l5" value="B"> False</label>
+        <div id="fb-l5" class="feedback"></div>
+      </div>
+
+      <hr style="margin:10px 0">
+
+      <!-- l6..l10 matching: Conversation 1..5 map to A..E choices -->
+      <div class="question">
+        <span class="qnum">L6.</span> Conversation 1 → choose A–E <br>
+        <select name="l6" id="l6">
+          <option value="">-- choose --</option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+          <option value="E">E</option>
+        </select>
+        <div id="fb-l6" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">L7.</span> Conversation 2 → choose A–E <br>
+        <select name="l7" id="l7">
+          <option value="">-- choose --</option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+          <option value="E">E</option>
+        </select>
+        <div id="fb-l7" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">L8.</span> Conversation 3 → choose A–E <br>
+        <select name="l8" id="l8">
+          <option value="">-- choose --</option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+          <option value="E">E</option>
+        </select>
+        <div id="fb-l8" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">L9.</span> Conversation 4 → choose A–E <br>
+        <select name="l9" id="l9">
+          <option value="">-- choose --</option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+          <option value="E">E</option>
+        </select>
+        <div id="fb-l9" class="feedback"></div>
+      </div>
+
+      <div class="question">
+        <span class="qnum">L10.</span> Conversation 5 → choose A–E <br>
+        <select name="l10" id="l10">
+          <option value="">-- choose --</option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+          <option value="E">E</option>
+        </select>
+        <div id="fb-l10" class="feedback"></div>
+      </div>
+
+    </div>
+
+    <div class="controls">
+      <button type="button" onclick="submitTest()">Submit Test</button>
+    </div>
+
+    <div id="resultBox" style="display:none;"></div>
+  </form>
+
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/test-common.js"></script>
+    <script src="../scripts/elementary-test.js"></script>
+</body>
+</html>
+    const key = {
+      // Grammar Q1-16
+      g1: "is watching",
+      g2: "isn't cleaned",
+      g3: "used to have",
+      g4: "is going to look for",
+      g5: "did … find",
+      g6: "didn't go",
+      g7: "have been",
+      g8: "had ... left",
+      g9: "aren't listening",
+      g10: "Have ... seen",
+      g11: "met",
+      g12: "have ... been",
+      g13: "is going to snow",
+      g14: "was cooking",
+      g15: "had seen",
+      g16: "is made",
+      // Grammar Part2 (one-word)
+      g17: "much",
+      g18: "won't",
+      g19: "where",
+      g20: "Neither",
+      g21: "on",
+      g22: "out",
+      g23: "Although",
+      g24: "to",
+      g25: "will",
+      g26: "yet",
+      // Grammar Part3
+      g27: "must",
+      g28: "best",
+      g29: "more",
+      g30: "too many",
+      g31: "don't have to",
+      g32: "enough",
+      g33: "anything",
+      g34: "should",
+      g35: "might",
+      g36: "quickly",
+      g37: "painted",
+      g38: "told",
+      g39: "Walking",
+      g40: "wouldn't",
+
+      // Vocabulary v1..v40
+      v1: "dolphin",
+      v2: "receipt",
+      v3: "talkative",
+      v4: "ironing",
+      v5: "gloves",
+      v6: "told",
+      v7: "had",
+      v8: "nephew",
+      v9: "through",
+      v10: "empty",
+      v11: "generous",
+      v12: "on",
+      v13: "forward",
+      v14: "try",
+      v15: "win",
+      v16: "on",
+      v17: "so",
+      v18: "gets",
+      v19: "very",
+      v20: "lend",
+      v21: "mean",
+      v22: "boring",
+      v23: "forget",
+      v24: "lose",
+      v25: "safe",
+      v26: "into",
+      v27: "on",
+      v28: "for",
+      v29: "about",
+      v30: "with",
+      v31: "for",
+      v32: "to",
+      v33: "at",
+      v34: "take",
+      v35: "back",
+      v36: "in",
+      v37: "across",
+      v38: "invite",
+      v39: "go",
+      v40: "make",
+
+      // Reading r1..r10 answers (A True / B False / C Doesn't say)
+      r1: "A",
+      r2: "C",
+      r3: "A",
+      r4: "B",
+      r5: "A",
+      r6: "C",
+      r7: "A",
+      r8: "A",
+      r9: "B",
+      r10: "A",
+      // Reading r11..r15 short answers (we'll accept key variants)
+      r11: "yesterday's weather and what you were thinking about when you woke up",
+      r12: "small details",
+      r13: "68",
+      r14: "a hard-working and successful student",
+      r15: "she expected her memory to start to get worse",
+
+      // Listening l1..l5
+      l1: "A",
+      l2: "B",
+      l3: "B",
+      l4: "A",
+      l5: "A",
+      // Listening matching l6..l10 (Conv1..Conv5 = E,B,D,A,C)
+      l6: "E",
+      l7: "B",
+      l8: "D",
+      l9: "A",
+      l10: "C"
+    };
+
+    // Helper normalize for text answers
+    function norm(s) {
+      return (s || "").toString().trim().toLowerCase()
+        // remove some punctuation
+        .replace(/[’'“”".,?!()]/g,"")
+        .replace(/\s+/g," ");
+    }
+
+    function gradeExam() {
+      let totalScore = 0;
+      const maxScore = 105;
+      // We'll count each grammar (g1..g40) => 1 point each
+      // each vocab v1..v40 => 1 point each
+      // reading r1..r10 => 1 each (10)
+      // reading r11..r15 short answers => 1 each (5)
+      // listening l1..l5 => 1 each (5)
+      // listening l6..l10 matching => 1 each (5)
+
+      // Clear previous feedback
+      document.querySelectorAll('.feedback').forEach(e => e.innerHTML = '');
+
+      // ---------- GRAMMAR g1..g40 ----------
+      for (let i = 1; i <= 40; i++) {
+        const id = 'g' + i;
+        const fb = document.getElementById('fb-' + id);
+        // Radio or text?
+        const radios = document.getElementsByName(id);
+        if (radios && radios.length > 0) {
+          // radio
+          let answered = false, val = '';
+          for (let r of radios) {
+            if (r.checked) { answered = true; val = r.value; break; }
+          }
+          if (!answered) {
+            fb.innerHTML = '<span class="notanswered">⚠️ Not answered. Correct: ' + key[id] + '</span>';
+          } else {
+            // compare normalized for some keys
+            if (norm(val) === norm(key[id])) {
+              fb.innerHTML = '<span class="correct">✅ Correct</span>';
+              totalScore += 1;
+            } else {
+              fb.innerHTML = '<span class="wrong">❌ Wrong. Correct: ' + key[id] + '</span>';
+            }
+          }
+        } else {
+          // text input (only for part2 but handled here if present)
+          const el = document.getElementById(id);
+          if (el) {
+            const user = norm(el.value);
+            if (!user) {
+              fb.innerHTML = '<span class="notanswered">⚠️ Not answered. Correct: ' + key[id] + '</span>';
+            } else {
+              // accept case-insensitive equality
+              if (user === norm(key[id])) {
+                fb.innerHTML = '<span class="correct">✅ Correct</span>';
+                totalScore += 1;
+              } else {
+                fb.innerHTML = '<span class="wrong">❌ Wrong. Correct: ' + key[id] + '</span>';
+              }
+            }
+          }
+        }
+      }
+
+      // ---------- VOCABULARY v1..v40 ----------
+      for (let i = 1; i <= 40; i++) {
+        const id = 'v' + i;
+        const fb = document.getElementById('fb-' + id);
+        const radios = document.getElementsByName(id);
+        if (radios && radios.length > 0) {
+          let answered = false, val = '';
+          for (let r of radios) {
+            if (r.checked) { answered = true; val = r.value; break; }
+          }
+          if (!answered) {
+            fb.innerHTML = '<span class="notanswered">⚠️ Not answered. Correct: ' + key[id] + '</span>';
+          } else {
+            if (norm(val) === norm(key[id])) {
+              fb.innerHTML = '<span class="correct">✅ Correct</span>';
+              totalScore += 1;
+            } else {
+              fb.innerHTML = '<span class="wrong">❌ Wrong. Correct: ' + key[id] + '</span>';
+            }
+          }
+        } else {
+          // text input
+          const el = document.getElementById(id);
+          if (el) {
+            const user = norm(el.value);
+            if (!user) {
+              fb.innerHTML = '<span class="notanswered">⚠️ Not answered. Correct: ' + key[id] + '</span>';
+            } else {
+              if (user === norm(key[id])) {
+                fb.innerHTML = '<span class="correct">✅ Correct</span>';
+                totalScore += 1;
+              } else {
+                fb.innerHTML = '<span class="wrong">❌ Wrong. Correct: ' + key[id] + '</span>';
+              }
+            }
+          }
+        }
+      }
+
+      // ---------- READING r1..r10 (T/F/D.S.) ----------
+      for (let i = 1; i <= 10; i++) {
+        const id = 'r' + i;
+        const fb = document.getElementById('fb-' + id);
+        const radios = document.getElementsByName(id);
+        let answered = false, val = '';
+        for (let r of radios) {
+          if (r.checked) { answered = true; val = r.value; break; }
+        }
+        if (!answered) {
+          fb.innerHTML = '<span class="notanswered">⚠️ Not answered. Correct: ' + key[id] + '</span>';
+        } else {
+          if (val === key[id]) {
+            fb.innerHTML = '<span class="correct">✅ Correct</span>';
+            totalScore += 1;
+          } else {
+            fb.innerHTML = '<span class="wrong">❌ Wrong. Correct: ' + key[id] + '</span>';
+          }
+        }
+      }
+
+      // ---------- READING r11..r15 (short answers) ----------
+      // We'll allow some flexible matching by normalization and checking for key phrases.
+      const readingShortKeys = {
+        r11: ["yesterday's weather", "what you were thinking", "yesterday weather", "what you were thinking about when you woke up"],
+        r12: ["small details", "small details.", "small details of the other days", "small details of the other days weeks months and years"],
+        r13: ["68", "sixty eight", "sixty-eight"],
+        r14: ["hard-working and successful student", "hard-working student", "successful student", "hard working student"],
+        r15: ["memory to start to get worse", "her memory to start to get worse", "memory to get worse", "it to get worse", "her memory would get worse"]
+      };
+      for (let i = 11; i <= 15; i++) {
+        const id = 'r' + i;
+        const fb = document.getElementById('fb-' + id);
+        const el = document.getElementById(id);
+        const val = el ? norm(el.value) : '';
+        if (!val) {
+          fb.innerHTML = '<span class="notanswered">⚠️ Not answered. Expected: ' + key[id] + '</span>';
+        } else {
+          // check if any phrase in acceptable list is found inside user answer
+          const okList = readingShortKeys[id] || [];
+          let ok = false;
+          for (let phrase of okList) {
+            if (val.indexOf(norm(phrase)) !== -1) { ok = true; break; }
+          }
+          if (ok) {
+            fb.innerHTML = '<span class="correct">✅ Correct</span>';
+            totalScore += 1;
+          } else {
+            fb.innerHTML = '<span class="wrong">❌ Check answer. Expected (example): ' + key[id] + '</span>';
+          }
+        }
+      }
+
+      // ---------- LISTENING l1..l5 (T/F) ----------
+      for (let i = 1; i <= 5; i++) {
+        const id = 'l' + i;
+        const fb = document.getElementById('fb-' + id);
+        const radios = document.getElementsByName(id);
+        let answered = false, val = '';
+        for (let r of radios) {
+          if (r.checked) { answered = true; val = r.value; break; }
+        }
+        if (!answered) {
+          fb.innerHTML = '<span class="notanswered">⚠️ Not answered. Correct: ' + key[id] + '</span>';
+        } else {
+          if (val === key[id]) {
+            fb.innerHTML = '<span class="correct">✅ Correct</span>';
+            totalScore += 1;
+          } else {
+            fb.innerHTML = '<span class="wrong">❌ Wrong. Correct: ' + key[id] + '</span>';
+          }
+        }
+      }
+
+      // ---------- LISTENING l6..l10 matching (selects) ----------
+      for (let i = 6; i <= 10; i++) {
+        const id = 'l' + i;
+        const fb = document.getElementById('fb-' + id);
+        const sel = document.getElementById(id);
+        const val = sel ? sel.value : '';
+        if (!val) {
+          fb.innerHTML = '<span class="notanswered">⚠️ Not answered. Correct: ' + key[id] + '</span>';
+        } else {
+          if (val === key[id]) {
+            fb.innerHTML = '<span class="correct">✅ Correct</span>';
+            totalScore += 1;
+          } else {
+            fb.innerHTML = '<span class="wrong">❌ Wrong. Correct: ' + key[id] + '</span>';
+          }
+        }
+      }
+
+      // ---------- SHOW FINAL RESULT ----------
+      const rb = document.getElementById('resultBox');
+      rb.style.display = 'block';
+      rb.innerHTML = "<strong>Final score: " + totalScore + " / 105</strong><br>" +
+                     "Percentage: " + (Math.round((totalScore / 105) * 100)) + "%<br>" +
+                     "<div class='hint'>Green = correct · Red = wrong (correct answer shown) · Orange = not answered</div>";
+
+      // scroll to results
+      rb.scrollIntoView({behavior: "smooth", block: "center"});
+    }
+  </script>
+</body>
+</html>
+
