@@ -83,8 +83,8 @@ header h1 {
     box-shadow: 0 20px 40px rgba(0,0,0,0.3);
 }
 
-.level-card.beginner,
-.level-card.elementary,
+.level-card.pre-intermediate,
+.level-card.intermediate,
 .level-card.advanced {
     border-color: #2563eb;
 }
@@ -130,8 +130,8 @@ header h1 {
 
 
 
-.beginner-btn,
-.elementary-btn,
+.pre-intermediate-btn,
+.intermediate-btn,
 .advanced-btn {
     background: linear-gradient(45deg, #2563eb, #1d4ed8);
 }

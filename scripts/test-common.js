@@ -191,6 +191,30 @@ function getTimeSpent() {
     return Math.round((end - start) / 1000); // seconds
 }
 
+// Function to save test results to localStorage
+function saveTestResults(testData) {
+    try {
+        // Get existing results from localStorage
+        let allResults = JSON.parse(localStorage.getItem('testResults') || '[]');
+        
+        // Add new result
+        allResults.push({
+            ...testData,
+            timestamp: new Date().toISOString(),
+            id: Date.now() + Math.random()
+        });
+        
+        // Save back to localStorage
+        localStorage.setItem('testResults', JSON.stringify(allResults));
+        
+        console.log('Test results saved successfully:', testData);
+        return true;
+    } catch (error) {
+        console.error('Error saving test results:', error);
+        return false;
+    }
+}
+
 function downloadTestResult() {
     if (!window.testResultData) return;
     
@@ -249,8 +273,8 @@ function initializeAutoSave() {
 
 function clearAutoSavedAnswers() {
     // Clear auto-saved data for all test levels
-    sessionStorage.removeItem('autoSavedAnswers_beginner');
-    sessionStorage.removeItem('autoSavedAnswers_elementary');
+    sessionStorage.removeItem('autoSavedAnswers_pre-intermediate');
+    sessionStorage.removeItem('autoSavedAnswers_intermediate');
     sessionStorage.removeItem('autoSavedAnswers_advanced');
     sessionStorage.removeItem('autoSavedAnswers');
 }

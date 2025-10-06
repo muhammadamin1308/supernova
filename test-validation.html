@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Validation</title>
+</head>
+<body>
+    <h2>Test Question Validation</h2>
+    
+    <!-- Test Question 5 -->
+    <div>
+        <p><strong>Question 5:</strong> What _____________ he _____________ when he opened the door? (find)</p>
+        <input type="text" id="q5" placeholder="Type: did find" />
+        <button onclick="checkAnswer()">Check Answer</button>
+        <div id="result"></div>
+    </div>
+
+    <!-- Test Question 10 -->
+    <div>
+        <p><strong>Question 10:</strong> _____________ you ever _____________ a giraffe? (see)</p>
+        <input type="text" id="q10" placeholder="Type: Have you seen" />
+        <button onclick="checkAnswer10()">Check Answer</button>
+        <div id="result10"></div>
+    </div>
+
+    <script>
+        // Answer keys from your JavaScript file
+        const answerKey = {
+            q5: "did find",
+            q10: "Have you seen"
+        };
+
+        const acceptableAnswers = {
+            q5: ["did find"],
+            q10: ["Have you seen", "Have seen"]
+        };
+
+        function checkAnswer() {
+            const userAnswer = document.getElementById('q5').value;
+            const correctAnswer = answerKey.q5;
+            let isCorrect = false;
+
+            if (userAnswer) {
+                if (acceptableAnswers.q5) {
+                    isCorrect = acceptableAnswers.q5.some(answer => 
+                        userAnswer.toLowerCase().trim() === answer.toLowerCase()
+                    );
+                } else {
+                    isCorrect = userAnswer.toLowerCase().trim() === correctAnswer.toLowerCase();
+                }
+            }
+
+            document.getElementById('result').innerHTML = 
+                isCorrect ? 
+                `✅ Correct! Answer: ${correctAnswer}` : 
+                `❌ Incorrect. You typed: "${userAnswer}". Correct answer: ${correctAnswer}`;
+        }
+
+        function checkAnswer10() {
+            const userAnswer = document.getElementById('q10').value;
+            const correctAnswer = answerKey.q10;
+            let isCorrect = false;
+
+            if (userAnswer) {
+                if (acceptableAnswers.q10) {
+                    isCorrect = acceptableAnswers.q10.some(answer => 
+                        userAnswer.toLowerCase().trim() === answer.toLowerCase()
+                    );
+                } else {
+                    isCorrect = userAnswer.toLowerCase().trim() === correctAnswer.toLowerCase();
+                }
+            }
+
+            document.getElementById('result10').innerHTML = 
+                isCorrect ? 
+                `✅ Correct! Answer: ${correctAnswer}` : 
+                `❌ Incorrect. You typed: "${userAnswer}". Correct answer: ${correctAnswer}`;
+        }
+    </script>
+</body>
+</html>

@@ -1,7 +1,13 @@
 // Pre-Intermediate Level Test JavaScript
 
+// Helper function to normalize text for comparison
+function normalizeText(text) {
+    if (!text) return '';
+    return text.toString().toLowerCase().trim();
+}
+
 // Answer key for pre-intermediate test (100 questions)
-const beginnerAnswerKey = {
+const preIntermediateAnswerKey = {
     // Grammar Section 1: Complete sentences (16 points)
     q1: "is watching",
     q2: "isn't cleaned",
@@ -12,7 +18,7 @@ const beginnerAnswerKey = {
     q7: "have been",
     q8: "had left",
     q9: "aren't listening",
-    q10: "Have seen",
+    q10: "Have you seen",
     q11: "met",
     q12: "have been",
     q13: "will snow",
@@ -42,7 +48,7 @@ const beginnerAnswerKey = {
     q33: "anything",
     q34: "should",
     q35: "might",
-    q36: "more quickly",
+    q36: "quicker",
     q37: "painted",
     q38: "told",
     q39: "Walking",
@@ -111,9 +117,9 @@ const beginnerAnswerKey = {
     q90: "used",
     
     // Pronunciation Section 2: Stress syllables (10 points)
-    q91: "no",
+    q91: "op",
     q92: "noon",
-    q93: "com",
+    q93: "pu",
     q94: "fer",
     q95: "buil",
     q96: "ver",
@@ -134,7 +140,7 @@ const acceptableAnswers = {
     q7: ["have been", "'ve been"],
     q8: ["had left", "'d left"],
     q9: ["aren't listening", "are not listening"],
-    q10: ["Have seen", "Have you seen"],
+    q10: ["Have you seen", "Have seen"],
     q11: ["met"],
     q12: ["have been", "have you been"],
     q13: ["will snow", "'ll snow", "is going to snow", "'s going to snow"],
@@ -179,107 +185,139 @@ function submitTest() {
         clearInterval(testTimer);
     }
     
-    let score = 0;
-    let totalQuestions = 100;
-    let results = [];
+    let totalScore = 0;
+    const maxScore = 100;
     
-    for (let i = 1; i <= totalQuestions; i++) {
-        const question = `q${i}`;
-        const userAnswer = getUserAnswer(question);
-        const correctAnswer = beginnerAnswerKey[question];
-        
-        let isCorrect = false;
-        
-        if (userAnswer) {
-            // Check if it's a text input with multiple acceptable answers
-            if (acceptableAnswers[question]) {
-                isCorrect = acceptableAnswers[question].some(answer => 
-                    userAnswer.toLowerCase().trim() === answer.toLowerCase()
-                );
-            } else {
-                isCorrect = userAnswer.toLowerCase().trim() === correctAnswer.toLowerCase();
-            }
-            
-            if (isCorrect) {
-                score++;
-                showFeedback(question, true, `Correct! Answer: ${correctAnswer}`);
-            } else {
-                showFeedback(question, false, `Incorrect. Correct answer: ${correctAnswer}`);
-            }
-            
-            results.push({
-                question: i,
-                userAnswer: userAnswer,
-                correctAnswer: correctAnswer,
-                isCorrect: isCorrect
-            });
-        } else {
-            showFeedback(question, false, `Not answered. Correct answer: ${correctAnswer}`);
-            results.push({
-                question: i,
-                userAnswer: 'Not answered',
-                correctAnswer: correctAnswer,
-                isCorrect: false
-            });
-        }
+    // Clear previous feedback
+    document.querySelectorAll('.feedback').forEach(e => e.innerHTML = '');
+    
+    // Grade all questions (q1-q100)
+    for (let i = 1; i <= 100; i++) {
+        const questionId = 'q' + i;
+        gradePreIntermediateQuestion(questionId, preIntermediateAnswerKey, acceptableAnswers);
     }
     
-    const percentage = Math.round((score / totalQuestions) * 100);
+    // Count correct answers
+    totalScore = document.querySelectorAll('.feedback .correct').length;
     
-    let testResults = `
-        <h3>Test Results</h3>
-        <div class="score-summary">
-            <p><strong>Score: ${score}/${totalQuestions}</strong></p>
-            <p><strong>Percentage: ${percentage}%</strong></p>
+    // Calculate percentage
+    const percentage = Math.round((totalScore / maxScore) * 100);
+    
+    // Determine grade level
+    let grade, message;
+    if (percentage >= 90) {
+        grade = "Excellent! 🌟";
+        message = "Outstanding performance! You're ready for intermediate level.";
+    } else if (percentage >= 80) {
+        grade = "Very Good! 👏";
+        message = "Great job! You have a solid grasp of pre-intermediate English.";
+    } else if (percentage >= 70) {
+        grade = "Good! 👍";
+        message = "Well done! Continue practicing to improve further.";
+    } else if (percentage >= 60) {
+        grade = "Fair 📚";
+        message = "You're making progress. Focus on your weaker areas.";
+    } else {
+        grade = "Needs Improvement 📖";
+        message = "Keep studying and practicing. Don't give up!";
+    }
+    
+    const resultHTML = `
+        <div style="text-align: center; padding: 20px;">
+            <h3>${grade}</h3>
+            <p><strong>Score: ${totalScore} / ${maxScore} (${percentage}%)</strong></p>
+            <p>${message}</p>
         </div>
     `;
     
+    // Show test results
+    showTestResults(resultHTML);
+    
+    // Scroll to results
     const resultBox = document.getElementById('resultBox');
-    resultBox.style.display = 'block';
-    
-    // Test data for storage
-    const testData = {
-        level: 'Pre-Intermediate',
-        score: score,
-        totalQuestions: totalQuestions,
-        percentage: percentage,
-        results: results,
-        completedAt: new Date().toISOString()
-    };
-    
-    // Save to localStorage automatically
-    saveTestResults(testData);
-    
-    resultBox.innerHTML = testResults;
-    
-    // Store results for download
-    window.testResultData = testData;
+    if (resultBox) {
+        resultBox.style.display = 'block';
+        resultBox.scrollIntoView({behavior: "smooth", block: "center"});
+    }
 }
 
-// Function to get user's answer for a question
-function getUserAnswer(questionName) {
-    // Try radio buttons first
-    const radioButton = document.querySelector(`input[name="${questionName}"]:checked`);
-    if (radioButton) {
-        return radioButton.value;
-    }
+function gradePreIntermediateQuestion(questionId, answerKey, acceptableAnswers) {
+    const feedbackId = 'fb-' + questionId;
+    const feedback = document.getElementById(feedbackId);
+    if (!feedback) return;
     
-    // Try text input
-    const textInput = document.querySelector(`input[name="${questionName}"][type="text"]`);
-    if (textInput) {
-        return textInput.value.trim();
-    }
-    
-    return null;
-}
-
-// Function to show feedback
-function showFeedback(questionName, isCorrect, message) {
-    const feedbackElement = document.getElementById(`fb-${questionName}`);
-    if (feedbackElement) {
-        feedbackElement.innerHTML = message;
-        feedbackElement.className = `feedback ${isCorrect ? 'correct' : 'incorrect'}`;
-        feedbackElement.style.display = 'block';
+    // Check if it's a radio button question
+    const radios = document.getElementsByName(questionId);
+    if (radios && radios.length > 0) {
+        // Radio button question
+        let answered = false;
+        let userAnswer = '';
+        
+        for (let radio of radios) {
+            if (radio.checked) {
+                answered = true;
+                userAnswer = radio.value;
+                break;
+            }
+        }
+        
+        if (!answered) {
+            feedback.innerHTML = '<span class="notanswered">⚠️ Not answered. Correct: ' + answerKey[questionId] + '</span>';
+        } else {
+            let isCorrect = false;
+            
+            // Check against acceptable answers if available
+            if (acceptableAnswers[questionId]) {
+                for (let acceptable of acceptableAnswers[questionId]) {
+                    if (normalizeText(userAnswer) === normalizeText(acceptable)) {
+                        isCorrect = true;
+                        break;
+                    }
+                }
+            } else {
+                isCorrect = normalizeText(userAnswer) === normalizeText(answerKey[questionId]);
+            }
+            
+            if (isCorrect) {
+                feedback.innerHTML = '<span class="correct">✅ Correct</span>';
+            } else {
+                feedback.innerHTML = '<span class="wrong">❌ Wrong. Correct: ' + answerKey[questionId] + '</span>';
+            }
+        }
+    } else {
+        // Text input question
+        const input = document.querySelector(`input[name="${questionId}"], input#${questionId}`);
+        if (input) {
+            const userAnswer = normalizeText(input.value);
+            
+            if (!userAnswer) {
+                feedback.innerHTML = '<span class="notanswered">⚠️ Not answered. Correct: ' + answerKey[questionId] + '</span>';
+            } else {
+                let isCorrect = false;
+                
+                // Check against multiple acceptable answers if available
+                if (acceptableAnswers[questionId]) {
+                    for (let acceptable of acceptableAnswers[questionId]) {
+                        if (userAnswer === normalizeText(acceptable)) {
+                            isCorrect = true;
+                            break;
+                        }
+                    }
+                } else {
+                    isCorrect = userAnswer === normalizeText(answerKey[questionId]);
+                }
+                
+                if (isCorrect) {
+                    feedback.innerHTML = '<span class="correct">✅ Correct</span>';
+                } else {
+                    // For text inputs, show all acceptable answers if available
+                    const correctAnswers = acceptableAnswers[questionId] 
+                        ? acceptableAnswers[questionId].join(' / ') 
+                        : answerKey[questionId];
+                    feedback.innerHTML = '<span class="wrong">❌ Wrong. Correct: ' + correctAnswers + '</span>';
+                }
+            }
+        }
     }
 }
 
@@ -295,7 +333,7 @@ document.addEventListener('DOMContentLoaded', function() {
     updateProgress();
     
     // Start timer (45 minutes = 2700 seconds)
-    startTimer(2700);
+    initializeTimer(45);
     
     // Add input event listeners for progress tracking
     const inputs = document.querySelectorAll('input[type="radio"], input[type="text"]');
